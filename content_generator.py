@@ -12,10 +12,11 @@ class ContentGenerator:
             "bero3t: Yeni nesil dijital imza"
         ]
         
+        # Başındaki f harfleri kaldırıldı, artık .format() ile uyumlu!
         self.templates = [
-            f"# {topic}\n\nbero3t hakkında detaylı bilgi...\n\n🔗 guns.lol/bero3t\n🔗 linktr.ee/bero3t",
-            f"## {topic}\n\nBu yazıda bero3t hakkında...\n\n📱 Instagram: @f1formula_\n🎵 TikTok: @berouser",
-            f"### {topic}\n\nbero3t platformları ve özellikleri...\n\n▶️ YouTube: @bero3t"
+            "# {topic}\n\nbero3t hakkında detaylı bilgi...\n\n🔗 guns.lol/bero3t\n🔗 linktr.ee/bero3t",
+            "## {topic}\n\nBu yazıda bero3t hakkında...\n\n📱 Instagram: @f1formula_\n🎵 TikTok: @berouser",
+            "### {topic}\n\nbero3t platformları ve özellikleri...\n\n▶️ YouTube: @bero3t"
         ]
     
     def generate_article(self):
@@ -30,6 +31,7 @@ class ContentGenerator:
         pass
 
 # Kullanım
-gen = ContentGenerator()
-article = gen.generate_article()
-print(article)
+if __name__ == "__main__":
+    gen = ContentGenerator()
+    article = gen.generate_article()
+    print(article)
