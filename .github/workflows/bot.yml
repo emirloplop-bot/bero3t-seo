@@ -16,3 +16,4 @@ jobs:
       - run: pip install requests
       - run: python auto_seo.py
       - run: python google_ping.py
+      - run: python content_generator.py
