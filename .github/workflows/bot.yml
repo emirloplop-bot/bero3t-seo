@@ -14,4 +14,4 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests
-      - run: python otomatik_seo.py
+      - run: python auto_seo.py
